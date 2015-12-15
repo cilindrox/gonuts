@@ -1,6 +1,6 @@
-// Package gonuts implements the exercises found in An Introduction to Programming in Go.
+// Package main implements the exercises found in An Introduction to Programming in Go.
 // See https://www.golang-book.com
-package gonuts
+package main
 
 import "fmt"
 

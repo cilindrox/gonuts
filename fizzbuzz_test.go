@@ -1,4 +1,4 @@
-package gonuts
+package main
 
 import "testing"
 
