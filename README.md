@@ -45,6 +45,6 @@ x := []int{
 }
 
 fmt.Println(Min(x, x[0]))
-``
+```
 
 [book]: https://www.golang-book.com/books/intro
