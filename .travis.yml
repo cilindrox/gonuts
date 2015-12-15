@@ -4,6 +4,3 @@ go:
   - tip
 
 sudo: false
-
-before_script:
-  - go vet ./...
