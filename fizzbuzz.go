@@ -10,14 +10,16 @@ import "fmt"
 func FizzBuzz(i int) string {
 
 	result := ""
-	if i%3 == 0 || i%5 == 0 {
-		if i%3 == 0 {
-			result += fmt.Sprintf("Fizz")
-		}
-		if i%5 == 0 {
-			result += fmt.Sprintf("Buzz")
-		}
-	} else {
+
+	if i%3 == 0 {
+		result += fmt.Sprintf("Fizz")
+	}
+
+	if i%5 == 0 {
+		result += fmt.Sprintf("Buzz")
+	}
+
+	if result == "" {
 		result += fmt.Sprintf("%d", i)
 	}
 
