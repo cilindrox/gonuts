@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-var flagtests = []struct {
+var fizzbuzzTests = []struct {
 	in  int
 	out string
 }{
@@ -13,8 +13,7 @@ var flagtests = []struct {
 }
 
 func TestFizzBuzz(t *testing.T) {
-
-	for _, tt := range flagtests {
+	for _, tt := range fizzbuzzTests {
 		s := FizzBuzz(tt.in)
 		if s != tt.out {
 			t.Errorf("Fizzbuzz(%d) => %s, want %s", tt.in, s, tt.out)
