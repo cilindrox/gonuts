@@ -8,7 +8,6 @@ import "fmt"
 // "Buzz" for multiples of 5 and "FizzBuzz" for numbers that satisfy both conditions.
 // If none of the above apply, the current number, formatted as a string, will be returned.
 func FizzBuzz(i int) string {
-
 	result := ""
 
 	if i%3 == 0 {

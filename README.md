@@ -13,6 +13,8 @@ This repo is contains implementations to exercises proposed in [An Introduction 
 
 ## Chapter 5 - Control Structures
 
+`fizzbuzz.go`
+
 2. Write a program that prints out all the numbers evenly divisible by 3 between 1 and 100. (3, 6, 9, etc.)
 
 ```go
@@ -34,6 +36,8 @@ for i := 0; i < 100; i++ {
 
 ## Chapter 6 - Arrays, Slices and Maps
 
+`min.go`
+
 4. Write a program that finds the smallest number in this list:
 
 ```go
@@ -46,5 +50,31 @@ x := []int{
 
 fmt.Println(Min(x, x[0]))
 ```
+
+## Chapter 7 - Functions
+
+`half.go`
+
+2. Write a function which takes an integer and halves it and returns `true` if it was even or `false` if it was odd. For example, `half(1)` should return `(0, false)` and `half(2)` should return `(1, true)`.
+
+3. Write a function with one variadic parameter that finds the greatest number in a list of numbers.
+
+```go
+func greatest(numbers ...int) int {
+  max := numbers[0]
+  for _, number := range numbers {
+    if number > max {
+      max = number
+    }
+  }
+
+  return max
+}
+```
+
+4. Write a `makeOddGenerator` function that generates odd numbers.
+
+5. Write a Fibonacci sequence function that can find `fib(n)`.
+
 
 [book]: https://www.golang-book.com/books/intro
