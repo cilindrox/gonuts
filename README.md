@@ -77,4 +77,21 @@ func greatest(numbers ...int) int {
 5. Write a Fibonacci sequence function that can find `fib(n)`.
 
 
+## Chapter 8 - Pointers
+
+`swap.go`
+
+5. Write a program that can swap two integers (`x := 1; y := 2; swap(&x, &y)` should give you `x=2` and `y=1`).
+
+```go
+func swap(x, y *int) {
+  tmp := new(int)
+  *tmp = *x
+  *x = *y
+  *y = *tmp
+}
+```
+
+
+
 [book]: https://www.golang-book.com/books/intro
