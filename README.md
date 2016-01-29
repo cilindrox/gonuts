@@ -93,5 +93,12 @@ func swap(x, y *int) {
 ```
 
 
+## Chapter 9 - Structs and Interfaces
+
+3. Add a `perimeter` method to the `Shape` interface which calculates the perimeter of a shape. Implement the method for `Circle` and `Rectangle`.
+
+
+
+
 
 [book]: https://www.golang-book.com/books/intro
